@@ -1,0 +1,19 @@
+.post-container {
+	width: 40vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.piture-post {
+	width: 40vw;
+	border-radius: 6px;
+	margin-right: 20px;
+}
+
+.content-post {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
