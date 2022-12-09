@@ -1,0 +1,21 @@
+.featured-post-container {
+  display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.piture-featured {
+	width: 50vw;
+	border-radius: 6px;
+	margin-right: 20px;
+}
+
+.featured-post-container div:nth-child(2){
+	max-width: 40vw;
+}
+
+.featured-content-post {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
