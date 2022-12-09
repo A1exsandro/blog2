@@ -6,11 +6,7 @@ export default function AuthorBadge(){
 	return (
 		<div className="author-badge-container">
 			<img src={profileImage} />
-			<div>
 				<h3>Alexsandro</h3>
-				<p>Paragrapho</p>
-			</div>
 		</div>
-
 	)
 }
