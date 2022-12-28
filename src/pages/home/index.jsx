@@ -1,6 +1,7 @@
 import { useState } from "react";
 import FeaturedPost from "../../components/featured-post";
 import PostList from "../../components/post-list";
+import "./styles.css"
 
 const mock = [
 	{
@@ -33,9 +34,9 @@ export default function Home(){
 	const [posts, setPosts] = useState(mock);
 
 	return(
-		<>
+		<div className="containerHome">
 			{posts && <FeaturedPost post={posts[0]}/>}
 			<PostList posts={posts}/>
-		</>
+		</div>
 	)
 }

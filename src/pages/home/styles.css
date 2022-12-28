@@ -8,7 +8,7 @@
   color: rgb(50, 50, 50);
 }
 
-body {
+.containerHome {
   margin: 0% 25%;
   font-family: "Roboto", sans-serif;
 }
