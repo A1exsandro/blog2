@@ -8,6 +8,7 @@ import Home from "../pages/home";
 import About from "../pages/about";
 import NavBar from "../components/navbar";
 import English from "../pages/english";
+import Template from "../pages/template";
 
 export default function AppRoutes(){
   return(
@@ -17,6 +18,7 @@ export default function AppRoutes(){
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/english" element={<English />} />
+        <Route path="/template" element={<Template />} />
       </Routes>
     </BrowserRouter>
   )

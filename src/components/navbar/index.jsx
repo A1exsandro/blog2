@@ -14,7 +14,7 @@ export default function NavBar(){
                 <Link to="/">Home</Link>
                 <Link to="/about">Sobre</Link>
                 <Link to="/contact">Contato</Link>
-                <Link to="/Culture">Cultura</Link>
+                <Link to="/template">Template</Link>
             </div>
         </nav>
     )
