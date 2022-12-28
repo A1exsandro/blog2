@@ -4,7 +4,7 @@ import "./styles.css"
 
 export default function Post({ post }){
   return(
-    <Link to="/about"> 
+    <Link to="/english"> 
       <div className="card">
         <div>
           <img className="imgContainer" src={post.image} />
