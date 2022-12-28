@@ -1,16 +1,20 @@
 .navbar {
-   display: flex;
-   width: 100%; 
-   
-   justify-content: space-between;
-   margin: 20px 0px;
+  display: flex;
+  width: 100%; 
+
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+    
+  margin-bottom: 20px;
+  background: blueviolet;
 }
 
 .nav-link a {
-    margin: 0px 10px;
-    color: black;
+  margin: 0px 10px;
+  color: black;
 }
 
 .logo a {
-    color: black;
+  color: black;
 }
