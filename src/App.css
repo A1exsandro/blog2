@@ -9,9 +9,16 @@
   box-sizing: border-box;
 }
 
-body{
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   width: 100vw;
   height: 100vh;
+}
+
+body{
   font-family: poppins, sans-serif;
   font-size: 0.88rem;
   background: var(--color-background);
