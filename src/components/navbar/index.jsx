@@ -6,7 +6,7 @@ export default function NavBar(){
         <nav className="navbar">
             <div className="logo">
                 <Link to="/">
-                    <h3>Meu Blog</h3>
+                    Meu Blog
                 </Link>
             </div>
 

@@ -28,6 +28,12 @@ const mock = [
 		title: "",
 		description: "",
 	},
+	{
+		image: "https://static.vecteezy.com/ti/vetor-gratis/t2/2042709-mar-por-do-sol-com-nuvens-vetor.jpg",
+		date: "00/00/00",
+		title: "SHOW NOW",
+		description: "FOR SHOW",
+	},
 ]
 
 export default function Home(){
