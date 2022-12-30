@@ -1,90 +1,89 @@
 :root{
-    --main-radius: 5px;
-    --main-padding: 5px;
+	--main-radius: 5px;
+	--main-padding: 5px;
 }
 
 .containerT{
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
-    grid-template-areas: 
-        "navT navT navT navT"
-        "sidebarT mainT mainT mainT"
-        "sidebarT content1T content2T content3T"
-        "sidebarT footerT footerT footerT"
-    ;
-    gap: 0.2rem;
+	display: grid;
+	height: 90vh;
+	margin: 2rem 2rem 0 0;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+	grid-template-areas: 
+			"sidebarT mainT mainT mainT"
+			"sidebarT content1T content2T content3T"
+			"sidebarT footerT footerT footerT"
+	;
+	gap: 0.2rem;
 
-    font-family: "Inter", sans-serif;
-    font-weight: 800;
-    text-transform: uppercase;
-    font-size: 12px;
-    text-align: center;
+	font-family: "Inter", sans-serif;
+	font-weight: 800;
+	text-transform: uppercase;
+	font-size: 12px;
+	text-align: center;
 }
 
-.navT{
-    background-color: aqua;
-    grid-area: navT;
-    border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
+.class-word{
+	background-color: bisque;
+	margin: 1rem;
+	padding: 2rem;
+	border-radius: 15px;
 }
 
 .mainT{
-    background-color: chartreuse;
-    grid-area: mainT;
-    border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
+	background-color: chartreuse;
+	grid-area: mainT;
+	border-radius: var(--main-radius);
+	padding-top: var(--main-padding);
 }
 
 .sidebarT{
-    background-color: blueviolet;
-    grid-area: sidebarT;
-    border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
+	background: var(--color-background);
+	grid-area: sidebarT;
+	border-radius: var(--main-radius);
+	padding-top: var(--main-padding);
 }
 
 .content1T{
-    background-color: brown;
-    grid-area: content1T;
-    border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
+	background-color: brown;
+	grid-area: content1T;
+	border-radius: var(--main-radius);
+	padding-top: var(--main-padding);
 }
 
 .content2T{
-    background-color: aquamarine;
-    grid-area: content2T;
-    border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
+	background-color: aquamarine;
+	grid-area: content2T;
+	border-radius: var(--main-radius);
+	padding-top: var(--main-padding);
 }
 
 .content3T{
-    background-color: chocolate;
-    grid-area: content3T;
-    border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
+	background-color: chocolate;
+	grid-area: content3T;
+	border-radius: var(--main-radius);
+	padding-top: var(--main-padding);
 }
 
 .footerT{
-    background-color: aqua;
-    grid-area: footerT;
-    border-radius: var(--main-radius);
-    padding-top: var(--main-padding);border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
+	background-color: aqua;
+	grid-area: footerT;
+	border-radius: var(--main-radius);
+	padding-top: var(--main-padding);border-radius: var(--main-radius);
+	padding-top: var(--main-padding);
 }
 
 @media only screen and (max-width:550px){
-    .containerT{
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
-        grid-template-areas: 
-        "navT"
-        "sidebarT" 
-        "mainT"
-        "content1T" 
-        "content2T" 
-        "content3T"
-        "footerT"
-        ;
-    }
+	.containerT{
+		grid-template-columns: 1fr;
+		grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+		grid-template-areas: 
+		"sidebarT" 
+		"mainT"
+		"content1T" 
+		"content2T" 
+		"content3T"
+		"footerT"
+		;
+	}
 }

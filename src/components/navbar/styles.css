@@ -7,14 +7,15 @@
   padding: 1rem;
     
   
-  background: blueviolet;
+  background: var(--color-background);
+  box-shadow: 0 15px 15px rgba(216, 211, 211, 0.4);
 }
 
 .nav-link a {
-  margin: 0px 10px;
-  color: black;
+  margin: 0px 30px;
+  color: var(--color-danger);
 }
 
 .logo a {
-  color: black;
+  color: var(--color-danger);
 }
