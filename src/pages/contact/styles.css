@@ -1,5 +1,13 @@
 .containerContact {
 	margin-top: 5rem;
-	color: aliceblue;
- 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contactCard {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 50%;
 }
