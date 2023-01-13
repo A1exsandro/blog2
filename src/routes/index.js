@@ -11,6 +11,7 @@ import English from "../pages/english";
 import Template from "../pages/template";
 import Footer from "../components/footer";
 import Contact from "../pages/contact";
+import Presence from "../pages/presence";
 
 export default function AppRoutes(){
   return(
@@ -22,6 +23,7 @@ export default function AppRoutes(){
         <Route path="/english" element={<English />} />
         <Route path="/template" element={<Template />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/presence" element={<Presence />} />
       </Routes>
       <Footer />
     </BrowserRouter>

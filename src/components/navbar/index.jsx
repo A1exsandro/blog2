@@ -15,6 +15,7 @@ export default function NavBar(){
                 <Link to="/about">Aprender</Link>
                 <Link to="/contact">Contato</Link>
                 <Link to="/template">Template</Link>
+                <Link to="/presence">Presence</Link>
             </div>
         </nav>
     )
