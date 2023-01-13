@@ -15,3 +15,13 @@
 	border-radius: 5px;
 	margin: 0.5rem 0;
 }
+
+/* CALL */
+.call {
+	width: 50%;
+}
+
+.headerCall, .bodyCall {
+	display: flex;
+	justify-content: space-between;
+}
