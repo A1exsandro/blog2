@@ -1,34 +1,54 @@
 import "./styles.css"
 
+const students = [
+  {
+    id: 1,
+    name: "Alexsando",
+    shift: "noturno"
+  },
+  {
+    id: 2,
+    name: "Anderson",
+    shift: "noturno"
+  },
+  {
+    id: 3,
+    name: "Antônio",
+    shift: "noturno"
+  },
+  {
+    id: 4,
+    name: "Alan",
+    shift: "noturno"
+  },
+  {
+    id: 5,
+    name: "Alex",
+    shift: "noturno"
+  },
+  {
+    id: 6,
+    name: "Augusto",
+    shift: "noturno"
+  },
+]
+
 export default function Contact(){
   return(
     <div className="containerContact">
       <div>Contact</div> 
 
-      <div className="contactCard">
-        <div className="contactAvatar">Avatar</div>
-        <div className="contactName">Nome</div>
-      </div>
-
-      <div className="contactCard">
-        <div className="contactAvatar">Avatar</div>
-        <div className="contactName">Alexsandro</div>
-      </div>
-
-      <div className="contactCard">
-        <div className="contactAvatar">Avatar</div>
-        <div className="contactName">Antônio</div>
-      </div>
-
-      <div className="contactCard">
-        <div className="contactAvatar">Avatar</div>
-        <div className="contactName">Adriana</div>
-      </div>
-
-      <div className="contactCard">
-        <div className="contactAvatar">Avatar</div>
-        <div className="contactName">Lucas</div>
-      </div>
+      {
+        students.map((std) => {
+          return(
+            <div className="contactCard">
+              <div className="contactAvatar">{std.id}</div>
+              <div className="contactName">{std.name}</div>
+            </div>
+          )
+        })
+      }
+ 
     </div>
   )
 }
