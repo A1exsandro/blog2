@@ -50,24 +50,24 @@ const Presence = () => {
   console.log(cards);
 
   return(
-    <main>
-      <div className="container">
-        {
-          cards.map((card, index) => (
-            <div key={index} className="card">
-              <div className="avatar">{index + 1}</div>
-              <div className="info">
-                <div className="presence">
-                  <span onClick={() => p_less(card)} className="presence less">{card.presence_less} Faltas </span>
-                  <span onClick={() => p_plus(card)} className="presence">{card.presence_plus} Presenças</span>
-                </div>
-                {card.name}
+ 
+    <div className="containerPresence">
+      {
+        cards.map((card, index) => (
+          <div key={index} className="cardPresence">
+            <div className="avatar">{index + 1}</div>
+            <div className="info">
+              <div className="presence">
+                <span onClick={() => p_less(card)} className="presence less">{card.presence_less} Faltas </span>
+                <span onClick={() => p_plus(card)} className="presence">{card.presence_plus} Presenças</span>
               </div>
-              <div className="button">X</div>
-            </div>    
+              {card.name}
+            </div>
+            <div className="button">X</div>
+          </div>    
         ))
-        } 
-      </div> 
+      } 
+
       <div>
         <table>
           <thead>
@@ -92,7 +92,8 @@ const Presence = () => {
           </tbody>
         </table>
       </div>
-    </main>
+    </div> 
+ 
   );
 }
 
