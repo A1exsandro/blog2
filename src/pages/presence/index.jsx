@@ -2,6 +2,21 @@ import React, { useState } from "react";
 import './styles.css';
 
 const Presence = () => {
+  const handleSubmit = (async () => {
+    await fetch(`http://localhost:3001/calls`,
+      {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          call: { date: "", names: ['a', 'b', 'c', 'd'] } 
+        })
+      }
+    )
+  });
+
   const [names, setNames] = useState([
     {
       name: 'Alex' 
@@ -22,7 +37,7 @@ const Presence = () => {
   }
 
   
-  // console.log(cards);
+ 
 
   return(
  
@@ -62,6 +77,11 @@ const Presence = () => {
             }
           </tbody>
         </table>
+        <form onSubmit={handleSubmit}>
+            <button type="submit">
+              Create
+            </button>
+          </form>
       </div>
     </div> 
  
